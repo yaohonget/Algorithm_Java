@@ -6,8 +6,8 @@ public class Quick implements Sort {
 	
 	public static void main(String[] args) {
 		Quick quickSort = new Quick();
-		//quickSort.sort();
-		quickSort.sort2();
+		quickSort.sort();
+		//quickSort.sort2();
 	}
 
 	public void init() {		

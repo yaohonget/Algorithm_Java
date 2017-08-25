@@ -6,7 +6,7 @@ public class Floyd implements Graph {
 
 	public static void main(String[] args) {
 		Floyd floyd = new Floyd();
-		floyd.findShortestMap();
+		floyd.findShortestPath();
 	}
 
 	@Override
@@ -14,8 +14,17 @@ public class Floyd implements Graph {
 
 	}
 
-	public void findShortestMap() {
-		int[][] toBeFound = floyd(input);
+	public void findShortestPath() {
+		
+		for (int i = 0; i < floydMatrix.length; i++) {
+			for (int j = 0; j < floydMatrix[0].length; j++) {
+				System.out.printf("%5s", floydMatrix[i][j] + "|");
+			}
+			System.out.println();
+		}
+		
+		System.out.println("Start to search...");
+		int[][] toBeFound = floyd(floydMatrix);
 
 		for (int i = 0; i < toBeFound.length; i++) {
 			for (int j = 0; j < toBeFound[0].length; j++) {

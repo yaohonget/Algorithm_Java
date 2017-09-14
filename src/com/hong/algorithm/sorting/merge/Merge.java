@@ -21,8 +21,7 @@ public class Merge implements Sort {
 	
 	@Override
 	public void init() {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
